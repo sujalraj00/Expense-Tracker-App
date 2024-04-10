@@ -6,7 +6,7 @@ var kColorScheme = ColorScheme.fromSeed(
   );
 
 var kDarkColorScheme = ColorScheme.fromSeed(
-  brightness: Brightness.dark,
+  brightness: Brightness.dark, 
   seedColor: const Color.fromARGB(255, 5, 99, 125)
   );  
 void main() {
@@ -14,7 +14,7 @@ void main() {
      MaterialApp(
       darkTheme: ThemeData.dark().copyWith(
         useMaterial3: true,
-        colorScheme: kColorScheme,
+        colorScheme: kDarkColorScheme,
          cardTheme: const CardTheme().copyWith(
           color: kDarkColorScheme.secondaryContainer,
           margin: const EdgeInsets.symmetric(
@@ -22,10 +22,12 @@ void main() {
             vertical: 8
             )
         ),
-        appBarTheme: const AppBarTheme().copyWith(
-          backgroundColor: kDarkColorScheme.onPrimaryContainer,
-          foregroundColor: kDarkColorScheme.primaryContainer
+         appBarTheme: const AppBarTheme().copyWith(
+          backgroundColor:const Color.fromARGB(255, 29, 26, 26),
+          foregroundColor: kColorScheme.primaryContainer
         ),
+        
+               
          elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom( 
             backgroundColor: kDarkColorScheme.primaryContainer,

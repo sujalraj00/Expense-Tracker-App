@@ -24,7 +24,7 @@ class ExpenseItem extends StatelessWidget{
           const SizedBox(height: 4,),
           Row(
             children: [
-            Text('\$${expense.amount.toStringAsFixed(2)}'),  // 12.3433 => 12.34  it will limit it to 2 digits after point
+            Text('\₹${expense.amount.toStringAsFixed(2)}'),  // 12.3433 => 12.34  it will limit it to 2 digits after point
             // curly braces tells that it should take this as one value that should be injected into this string
             // here the 2nd $ sign belong to special injection whereas 1st will be output as we are escaping it 
             const Spacer(),
